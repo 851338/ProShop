@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/purple_500"/>
+
+            <corners android:bottomLeftRadius="@dimen/gender_radio_btn_radius"
+                android:bottomRightRadius="@dimen/gender_radio_btn_radius"
+                android:topLeftRadius="@dimen/gender_radio_btn_radius"
+                android:topRightRadius="@dimen/gender_radio_btn_radius"/>
+
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+
+            <stroke android:width="@dimen/gender_radio_btn_stroke_width"
+                android:color="@color/darkGrey"/>
+
+            <corners android:bottomLeftRadius="@dimen/gender_radio_btn_radius"
+                android:bottomRightRadius="@dimen/gender_radio_btn_radius"
+                android:topLeftRadius="@dimen/gender_radio_btn_radius"
+                android:topRightRadius="@dimen/gender_radio_btn_radius"/>
+
+        </shape>
+    </item>
+</selector>

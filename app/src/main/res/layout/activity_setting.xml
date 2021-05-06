@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".menu.SettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="SETTING"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.example.proshop.utils.MyButton
+                android:id="@+id/btnAddPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_address"
+                android:layout_marginStart="@dimen/settings_btn_marginStartEnd"
+                android:layout_marginTop="53dp"
+                android:layout_marginEnd="@dimen/settings_btn_marginStartEnd"
+                android:background="@drawable/app_gradient_color_bg"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="1dp"
+                android:text="@string/lbl_add_card"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_img_height">
+
+                <ImageView
+                    android:id="@+id/iv_header_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+<!--                <androidx.appcompat.widget.Toolbar-->
+<!--                    android:id="@+id/toolbarSet"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="?attr/actionBarSize">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_title"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingStart="1dp"-->
+<!--                        android:paddingEnd="0dp"-->
+<!--                        android:paddingLeft="1dp"-->
+<!--                        android:paddingRight="0dp"-->
+<!--                        android:text="Settings"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="20sp"/>-->
+<!--                </androidx.appcompat.widget.Toolbar>-->
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_user_img"
+                android:layout_width="@dimen/settings_user_img_size"
+                android:layout_height="@dimen/settings_user_img_size"
+                android:layout_below="@id/fl_header_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/settings_user_img_marginTop">
+
+                <ImageView
+                    android:id="@+id/iv_user_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/settings_user_picture_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_placeholder"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/user_img_bg"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_header_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/item_grey_border_background"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:paddingStart="@dimen/settings_edit_label_marginStartEnd"
+                android:paddingTop="@dimen/settings_edit_label_marginTopBottom"
+                android:paddingEnd="@dimen/settings_edit_label_marginStartEnd"
+                android:paddingBottom="@dimen/settings_edit_label_marginTopBottom"
+                android:text="@string/lbl_edit"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/settings_edit_label_textSize" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_user_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/settings_name_marginTop"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/settings_name_textSize"
+                android:text="Name"/>
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/settings_info_marginTop"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/settings_info_textSize"
+                android:text="Gender"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_gender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/settings_info_marginTop"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/settings_info_textSize"
+                android:text="Email"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/settings_info_marginTop"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/settings_info_textSize"/>
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/settings_address_margin"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/settings_info_textSize"
+                    android:text="@string/lbl_address"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_vector_chevron_right"/>
+            </LinearLayout>
+
+            <com.example.proshop.utils.MyButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_address"
+                android:layout_marginStart="@dimen/settings_btn_marginStartEnd"
+                android:layout_marginTop="126dp"
+                android:layout_marginEnd="@dimen/settings_btn_marginStartEnd"
+                android:layout_marginBottom="@dimen/settings_btn_marginTopBottom"
+                android:background="@drawable/app_gradient_color_bg"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="1dp"
+                android:text="@string/lbl_logout"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203703861160",
+    "project_id": "proshop-53232",
+    "storage_bucket": "proshop-53232.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203703861160:android:4f61a1302bc7f632d6a79d",
+        "android_client_info": {
+          "package_name": "com.example.proshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203703861160-7qnk5locflfr77jsj4454u3q41vhpco3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhRvX_d-cGkZ0uoOGHok96v4UFX0QxeOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203703861160-7qnk5locflfr77jsj4454u3q41vhpco3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
